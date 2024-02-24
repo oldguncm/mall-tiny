@@ -58,7 +58,7 @@ public class MyBatisPlusGenerator {
                 .author("macro")
                 .disableOpenDir()
                 .enableSwagger()
-                .fileOverride()
+//                .fileOverride()
                 .dateType(DateType.ONLY_DATE)
                 .build();
     }
@@ -85,7 +85,7 @@ public class MyBatisPlusGenerator {
                 .moduleName(moduleName)
                 .parent(props.getStr("package.base"))
                 .entity("model")
-                .pathInfo(Collections.singletonMap(OutputFile.mapperXml, projectPath + "/src/main/resources/mapper/" + moduleName))
+                .pathInfo(Collections.singletonMap(OutputFile.xml, projectPath + "/src/main/resources/mapper/" + moduleName))
                 .build();
     }
 
